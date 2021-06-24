@@ -30,9 +30,7 @@ public class Testing {
         try {
             c.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE);
 
-            /*для БД.  ___четыре уровня изолированность___
-
-            * Isol Levels
+            /*для БД.  Isol Levels___четыре уровня изолированности___
 
             * ACID
             атомарность(либо оба, либо ничего),консистентность(постоянное выполнение чего-либо),
@@ -63,7 +61,7 @@ public class Testing {
             c.commit();
 //            return result;
         } catch (SQLException e) {
-c.rollback();
+            c.rollback();
 
         } finally {
             if(rs !=null)
